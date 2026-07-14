@@ -1,0 +1,31 @@
+{
+  "name": "TEDDY-XMD",
+  "description": "TEDDY-XMD - WhatsApp MD Multi-Device Bot powered by Teddy Tech Hub",
+  "repository": "https://github.com/Teddytech1/TEDDY-XMD",
+  "logo": "",
+  "keywords": ["whatsapp", "baileys", "bot", "node", "xmd", "Teddy-xmd"],
+  "stack": "heroku-26",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "TEDDY-XMD session string. Accepted format: TEDDY-XMD:~",
+      "required": false,
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
+}
