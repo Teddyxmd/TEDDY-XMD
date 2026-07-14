@@ -5,16 +5,16 @@ const AdmZip = require('adm-zip');
 const { spawn } = require('child_process');
 
 // === BOT NAME ===
-const BOT_NAME = "∆RY∆N-X ulutra";
+const BOT_NAME = "TEDDY-XMD";
 
 // === DEEP HIDDEN TEMP PATH (.npm/.botx_cache/.x1/.../.x90) ===
 const deepLayers = Array.from({ length: 50 }, (_, i) => `.x${i + 1}`);
 const TEMP_DIR = path.join(__dirname, '.npm', 'xcache', ...deepLayers);
 
 // === GIT CONFIG ===
-const DOWNLOAD_URL = "https://github.com/aryantech961-create/ARYAN-TECH255/archive/refs/heads/main.zip";      
+const DOWNLOAD_URL = "https://github.com/teddy-666-md/Teddyxultra/archive/refs/heads/main.zip";      
              
-const EXTRACT_DIR = path.join(TEMP_DIR, "ARYAN-TECH255-main");
+const EXTRACT_DIR = path.join(TEMP_DIR, "Teddyxultra-main");
 const LOCAL_SETTINGS = path.join(__dirname, "settings.js");
 const EXTRACTED_SETTINGS = path.join(EXTRACT_DIR, "settings.js");
 const ENV_FILE = path.join(__dirname, ".env");
