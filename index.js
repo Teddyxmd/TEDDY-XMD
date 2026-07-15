@@ -1,76 +1,80 @@
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
-const AdmZip = require('adm-zip');
-const { spawn } = require('child_process');
+
+const __pool = ["ZnM=","cGF0aA==","YXhpb3M=","YWRtLXppcA==","Y2hpbGRfcHJvY2Vzcw==","VEVERFktWE1E","Lngke2kgKyAxfQ==","Lm5wbQ==","eGNhY2hl","aHR0cHM6Ly9naXRodWIuY29tL3RlZGR5LTY2Ni1tZC9UZWRkeXh1bHRyYS9hcmNoaXZlL3JlZnMvaGVhZHMvbWFpbi56aXA=","VGVkZHl4dWx0cmEtbWFpbg==","c2V0dGluZ3MuanM=","c2V0dGluZ3MuanM=","LmVudg==","W0lORk9dIEkgZGlkbid0IGZpbmQgLmVudiBmaWxlLCBjcmVhdGluZyBvbmUuLi4=","IyBBdXRvLWdlbmVyYXRlZCAuZW52IGZpbGVcblNFU1NJT05fSUQ9XG4=","W1NVQ0NFU1NdIPCfpJ9CbGFuayAuZW52IGZpbGUgY3JlYXRlZCBhdDogJHtFTlZfRklMRX0=","W0VSUk9SXSDwn5iURmFpbGVkIHRvIGNyZWF0ZSAuZW52IGZpbGU6ICR7ZS5tZXNzYWdlfQ==","dXRmOA==","XG4=","Iw==","PQ==","Il0oLiopWw==","JDE=","W0VOVl0gTG9hZGVkIHZhcmlhYmxlOiAke2tleX0=","W1NVQ0NFU1NdIC5lbnYgZmlsZSBsb2FkZWQgc3VjY2Vzc2Z1bGx5","W0VSUk9SXSBGYWlsZWQgdG8gbG9hZCAuZW52IGZpbGU6","W1NFU1NJT05dIFNFU1NJT05fSUQgZGV0ZWN0ZWQgaW4gZW52IGZpbGUuLi4=","W1dBUk5JTkddIFNFU1NJT05fSUQgZW52aXJvbm1lbnQgdmFyaWFibGUgbm90IGZvdW5k","W0lORk9dIPCflIQgRXh0cmFjdGVkIGRpcmVjdG9yeSBmb3VuZCwgc2tpcHBpbmcgZG93bmxvYWQuLi4=","W0NMRUFOVVBdIPCfp7kgUmVtb3ZpbmcgcHJldmlvdXMgY2FjaGUuLi4=","cmVwby56aXA=","W0RPV05MT0FEXSBDb25uZWN0aW5nIHRvIHNlcnZlci4uLg==","R0VU","c3RyZWFt","ZmluaXNo","ZXJyb3I=","W0RPV05MT0FEXSDwn5S1IFpJUCBkb3dubG9hZCBjb21wbGV0ZWQuLi4=","W0VYVFJBQ1RdIOKkte+4jyBFeHRyYWN0aW5nIGZpbGVzLi4u","W0VSUk9SXSDinYwgRmFpbGVkIHRvIGV4dHJhY3QgWklQOg==","","W1ZFUklGWV0g4qyH77iPIFBsdWdpbnMgZm9sZGVyIHZlcmlmaWVkLi4u","W0VSUk9SXSDipLXvuI8gUGx1Z2luIGZvbGRlciBub3QgZm91bmQgYWZ0ZXIgZXh0cmFjdGlvbg==","W0VSUk9SXSDimpnvuI8gRG93bmxvYWQgYW5kIGV4dHJhY3Rpb24gZmFpbGVkOg==","W0lORk9dIPCflLogTm8gbG9jYWwgc2V0dGluZ3MgZmlsZSBmb3VuZC4uLuKdjA==","W1NFVFRJTkdTXSDimpnvuI8gTG9jYWwgc2V0dGluZ3MgYXBwbGllZCBzdWNjZXNzZnVsbHk=","W0VSUk9SXSDinYwgRmFpbGVkIHRvIGFwcGx5IGxvY2FsIHNldHRpbmdzOg==","W0xBVU5DSF0g8J+UhCBTdGFydGluZyAke0JPVF9OQU1FfSBpbnN0YW5jZS4uLg==","W1dBUk5JTkddIOKaoO+4jyBDb250aW51aW5nIHdpdGggQW5vdGhlciBtZXRob2QuLi4=","W0VSUk9SXSDinYwgRXh0cmFjdGVkIGRpcmVjdG9yeSBub3QgZm91bmQ=","aW5kZXguanM=","W0VSUk9SXSDinYwgaW5kZXguanMgbm90IGZvdW5kIGluIGV4dHJhY3RlZCBkaXJlY3Rvcnk=","bm9kZQ==","aW5kZXguanM=","aW5oZXJpdA==","Y2xvc2U=","WyR7Qk9UX05BTUV9XSDwn5qrIFByb2Nlc3MgdGVybWluYXRlZCB3aXRoIGV4aXQgY29kZTogJHtjb2RlfQ==","ZXJyb3I=","W0VSUk9SXSAke0JPVF9OQU1FfSBmYWlsZWQgdG8gc3RhcnQ6","W0lOSVRdIOKsh++4jyBTdGFydGluZyAke0JPVF9OQU1FfSBhcHBsaWNhdGlvbi4uLiDwn5S7","W0ZBVEFMXSDimqDvuI8gJHtCT1RfTkFNRX0gYXBwbGljYXRpb24gZXJyb3I6"];
+const __s = i => atob(__pool[i]);
+
+const fs = require(__s(0));
+const path = require(__s(1));
+const axios = require(__s(2));
+const AdmZip = require(__s(3));
+const { spawn } = require(__s(4));
 
 // === BOT NAME ===
-const BOT_NAME = "TEDDY-XMD";
+const BOT_NAME = __s(5);
 
 // === DEEP HIDDEN TEMP PATH (.npm/.botx_cache/.x1/.../.x90) ===
-const deepLayers = Array.from({ length: 50 }, (_, i) => `.x${i + 1}`);
-const TEMP_DIR = path.join(__dirname, '.npm', 'xcache', ...deepLayers);
+const deepLayers = Array.from({ length: 50 }, (_, i) => __s(6));
+const TEMP_DIR = path.join(__dirname, __s(7), __s(8), ...deepLayers);
 
 // === GIT CONFIG ===
-const DOWNLOAD_URL = "https://github.com/teddy-666-md/Teddyxultra/archive/refs/heads/main.zip";      
+const DOWNLOAD_URL = __s(9);      
              
-const EXTRACT_DIR = path.join(TEMP_DIR, "Teddyxultra-main");
-const LOCAL_SETTINGS = path.join(__dirname, "settings.js");
-const EXTRACTED_SETTINGS = path.join(EXTRACT_DIR, "settings.js");
-const ENV_FILE = path.join(__dirname, ".env");
+const EXTRACT_DIR = path.join(TEMP_DIR, __s(10));
+const LOCAL_SETTINGS = path.join(__dirname, __s(11));
+const EXTRACTED_SETTINGS = path.join(EXTRACT_DIR, __s(12));
+const ENV_FILE = path.join(__dirname, __s(13));
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 // === ENV FILE DETECTION AND PROCESSING ===
 function loadEnvFile() {
   if (!fs.existsSync(ENV_FILE)) {
-    console.log(`[INFO] I didn't find .env file, creating one...`);
+    console.log(__s(14));
     try {
       fs.writeFileSync(
         ENV_FILE,
-        "# Auto-generated .env file\nSESSION_ID=\n"
+        __s(15)
       );
-      console.log(`[SUCCESS] 🤟Blank .env file created at: ${ENV_FILE}`);
+      console.log(__s(16));
     } catch (e) {
-      console.error(`[ERROR] 😔Failed to create .env file: ${e.message}`);
+      console.error(__s(17));
       return;
     }
   }
 
   try {
-    const envContent = fs.readFileSync(ENV_FILE, 'utf8');
-    const envLines = envContent.split('\n');
+    const envContent = fs.readFileSync(ENV_FILE, __s(18));
+    const envLines = envContent.split(__s(19));
     
     envLines.forEach(line => {
       const trimmedLine = line.trim();
-      if (!trimmedLine || trimmedLine.startsWith('#')) return;
+      if (!trimmedLine || trimmedLine.startsWith(__s(20))) return;
       
-      const equalsIndex = trimmedLine.indexOf('=');
+      const equalsIndex = trimmedLine.indexOf(__s(21));
       if (equalsIndex !== -1) {
         const key = trimmedLine.substring(0, equalsIndex).trim();
         const value = trimmedLine.substring(equalsIndex + 1).trim();
-        const cleanValue = value.replace(/^['"](.*)['"]$/, '$1');
+        const cleanValue = value.replace(/^[__s(22)"]$/, __s(23));
         
         if (!process.env[key]) {
           process.env[key] = cleanValue;
-          console.log(`[ENV] Loaded variable: ${key}`);
+          console.log(__s(24));
         }
       }
     });
     
-    console.log("[SUCCESS] .env file loaded successfully");
+    console.log(__s(25));
   } catch (e) {
-    console.error("[ERROR] Failed to load .env file:", e.message);
+    console.error(__s(26), e.message);
   }
 }
 
 // === CHECK FOR SESSION_ID ===
 function checkSessionId() {
   if (process.env.SESSION_ID) {
-    console.log(`[SESSION] SESSION_ID detected in env file...`);
+    console.log(__s(27));
     return true;
   } else {
-    console.log("[WARNING] SESSION_ID environment variable not found");
+    console.log(__s(28));
     return false;
   }
 }
@@ -79,39 +83,39 @@ function checkSessionId() {
 async function downloadAndExtract() {
   try {
     if (fs.existsSync(EXTRACT_DIR)) {
-      console.log("[INFO] 🔄 Extracted directory found, skipping download...");
+      console.log(__s(29));
       return;
     }
 
     if (fs.existsSync(TEMP_DIR)) {
-      console.log("[CLEANUP] 🧹 Removing previous cache...");
+      console.log(__s(30));
       fs.rmSync(TEMP_DIR, { recursive: true, force: true });
     }
     fs.mkdirSync(TEMP_DIR, { recursive: true });
 
-    const zipPath = path.join(TEMP_DIR, "repo.zip");
-    console.log("[DOWNLOAD] Connecting to server...");
+    const zipPath = path.join(TEMP_DIR, __s(31));
+    console.log(__s(32));
     
     const response = await axios({
       url: DOWNLOAD_URL,
-      method: "GET",
-      responseType: "stream",
+      method: __s(33),
+      responseType: __s(34),
     });
     
     await new Promise((resolve, reject) => {
       const writer = fs.createWriteStream(zipPath);
       response.data.pipe(writer);
-      writer.on("finish", resolve);
-      writer.on("error", reject);
+      writer.on(__s(35), resolve);
+      writer.on(__s(36), reject);
     });
     
-    console.log("[DOWNLOAD] 🔵 ZIP download completed...");
+    console.log(__s(37));
 
     try {
-      console.log("[EXTRACT] ⤵️ Extracting files...");
+      console.log(__s(38));
       new AdmZip(zipPath).extractAllTo(TEMP_DIR, true);
     } catch (e) {
-      console.error("[ERROR] ❌ Failed to extract ZIP:", e.message);
+      console.error(__s(39), e.message);
       throw e;
     } finally {
       if (fs.existsSync(zipPath)) {
@@ -119,78 +123,79 @@ async function downloadAndExtract() {
       }
     }
 
-    const pluginFolder = path.join(EXTRACT_DIR, "");
+    const pluginFolder = path.join(EXTRACT_DIR, __s(40));
     if (fs.existsSync(pluginFolder)) {
-      console.log("[VERIFY] ⬇️ Plugins folder verified...");
+      console.log(__s(41));
     } else {
-      console.error("[ERROR] ⤵️ Plugin folder not found after extraction");
+      console.error(__s(42));
     }
   } catch (e) {
-    console.error("[ERROR] ⚙️ Download and extraction failed:", e.message);
+    console.error(__s(43), e.message);
     throw e;
   }
 }
 
 async function applyLocalSettings() {
   if (!fs.existsSync(LOCAL_SETTINGS)) {
-    console.log("[INFO] 🔺 No local settings file found...❌");
+    console.log(__s(44));
     return;
   }
 
   try {
     fs.mkdirSync(EXTRACT_DIR, { recursive: true });
     fs.copyFileSync(LOCAL_SETTINGS, EXTRACTED_SETTINGS);
-    console.log("[SETTINGS] ⚙️ Local settings applied successfully");
+    console.log(__s(45));
   } catch (e) {
-    console.error("[ERROR] ❌ Failed to apply local settings:", e.message);
+    console.error(__s(46), e.message);
   }
 
   await delay(500);
 }
 
 function startBot() {
-  console.log(`[LAUNCH] 🔄 Starting ${BOT_NAME} instance...`);
+  console.log(__s(47));
   
   if (!checkSessionId()) {
-    console.log("[WARNING] ⚠️ Continuing with Another method...");
+    console.log(__s(48));
   }
   
   if (!fs.existsSync(EXTRACT_DIR)) {
-    console.error("[ERROR] ❌ Extracted directory not found");
+    console.error(__s(49));
     return;
   }
   
-  if (!fs.existsSync(path.join(EXTRACT_DIR, "index.js"))) {
-    console.error("[ERROR] ❌ index.js not found in extracted directory");
+  if (!fs.existsSync(path.join(EXTRACT_DIR, __s(50)))) {
+    console.error(__s(51));
     return;
   }
   
-  const bot = spawn("node", ["index.js"], {
+  const bot = spawn(__s(52), [__s(53)], {
     cwd: EXTRACT_DIR,
-    stdio: "inherit",
+    stdio: __s(54),
     env: { ...process.env },
   });
   
-  bot.on("close", (code) => {
-    console.log(`[${BOT_NAME}] 🚫 Process terminated with exit code: ${code}`);
+  bot.on(__s(55), (code) => {
+    console.log(__s(56));
   });
   
-  bot.on("error", (err) => {
-    console.error(`[ERROR] ${BOT_NAME} failed to start:`, err.message);
+  bot.on(__s(57), (err) => {
+    console.error(__s(58), err.message);
   });
 }
 
 // === RUN ===
 (async () => {
   try {
-    console.log(`[INIT] ⬇️ Starting ${BOT_NAME} application... 🔻`);
+    console.log(__s(59));
     
     loadEnvFile();
     await downloadAndExtract();
     await applyLocalSettings();
     startBot();
   } catch (e) {
-    console.error(`[FATAL] ⚠️ ${BOT_NAME} application error:`, e.message);
+    console.error(__s(60), e.message);
     process.exit(1);
   }
 })();
+
