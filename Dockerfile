@@ -1,7 +1,14 @@
-FROM node:lts
+FROM node:20-bullseye
 
-# Install dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
+# Install dependencies needed for baileys + media
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg \
+    imagemagick \
+    webp \
+    python3 \
+    make \
+    g++ \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
@@ -9,17 +16,17 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies - production only to keep image small
-RUN npm install --production && npm cache clean --force
+# Install dependencies - production only
+RUN npm install --production --legacy-peer-deps && npm cache clean --force
 
 # Copy application code
 COPY . .
 
-# REMOVE THIS: EXPOSE 3000
-# We don't need to expose port for a worker bot
+# Don't expose port - this is a worker bot, not web
+# EXPOSE 3000
 
 # Set environment
 ENV NODE_ENV=production
 
-# Run command - RUN DIRECTLY, not through npm
+# Run bot directly
 CMD ["node", "index.js"]
