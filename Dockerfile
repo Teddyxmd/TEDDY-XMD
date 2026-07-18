@@ -9,17 +9,17 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install && npm cache clean --force
+# Install dependencies - production only to keep image small
+RUN npm install --production && npm cache clean --force
 
 # Copy application code
 COPY . .
 
-# Expose port
-EXPOSE 3000
+# REMOVE THIS: EXPOSE 3000
+# We don't need to expose port for a worker bot
 
 # Set environment
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
-# Run command
-CMD ["npm", "run", "start"]
+# Run command - RUN DIRECTLY, not through npm
+CMD ["node", "index.js"]
