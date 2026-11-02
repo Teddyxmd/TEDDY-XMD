@@ -1,32 +1,17 @@
-FROM node:20-bullseye
+FROM node:20-bookworm-slim
 
-# Install dependencies needed for baileys + media
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ffmpeg \
-    imagemagick \
-    webp \
-    python3 \
-    make \
-    g++ \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Set working directory
 WORKDIR /app
 
-# Copy package files
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg imagemagick webp python3 make g++ \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY package*.json ./
+RUN npm install --omit=dev --no-audit --no-fund
 
-# Install dependencies - production only
-RUN npm install --production --legacy-peer-deps && npm cache clean --force
-
-# Copy application code
 COPY . .
 
-# Don't expose port - this is a worker bot, not web
-# EXPOSE 3000
-
-# Set environment
 ENV NODE_ENV=production
+EXPOSE 3000
 
-# Run bot directly
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
