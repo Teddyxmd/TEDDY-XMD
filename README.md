@@ -1,299 +1,91 @@
-🧸 TEDDY-XMD ULTRA
-
-<p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-</p><h1 align="center">𝗧𝗘𝗗𝗗𝗬-𝗫𝗠𝗗 𝗨𝗟𝗧𝗥𝗔</h1><p align="center">
-  <b>🧸 KING OF AUTOMATION 🧸</b><br>
-  <b>POWERED BY TEDDY TECH HUB</b><br>
-  <i>FAST • STABLE • SECURE • RELIABLE</i>
-</p><p align="center">
-  Introducing <b>TEDDY-XMD ULTRA</b>, a powerful WhatsApp Multi-Device bot designed to bring automation, entertainment and advanced features to your WhatsApp experience.
-</p><p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Anton&size=28&pause=1000&color=00C853&vCenter=true&width=465&lines=WELCOME+TO+TEDDY-XMD;DEVELOPED+BY+TEDDY+TECH;KING+OF+AUTOMATION;TEDDY+TECH+IS+BACK+%F0%9F%A7%B8"/>
-</p><p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-</p>---
-
-🚀 QUICK ACCESS
-
-<p align="center">
-  <a href="https://github.com/Teddyxmd/TEDDY-XMD/fork">
-    <img src="https://img.shields.io/badge/FORK%20REPOSITORY-FF0000?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://teddyxmdpair-60b69f1c4cee.herokuapp.com/">
-    <img src="https://img.shields.io/badge/GET%20PAIRING%20CODE-00C853?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-  <a href="https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n">
-    <img src="https://img.shields.io/badge/JOIN%20WHATSAPP%20CHANNEL-FF0000?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-</p>---
-
-☁️ DEPLOYMENT BUTTONS
-
-CLOUD HOSTING
-
-<p align="center">
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/Teddyxmd/TEDDY-XMD">
-    <img src="https://img.shields.io/badge/DEPLOY%20ON%20HEROKU-00C853?style=for-the-badge&logo=heroku&logoColor=white"/>
-  </a>
-  <a href="https://railway.app/new">
-    <img src="https://img.shields.io/badge/DEPLOY%20ON%20RAILWAY-FF0000?style=for-the-badge&logo=railway&logoColor=white"/>
-  </a>
-  <a href="https://replit.com/">
-    <img src="https://img.shields.io/badge/DEPLOY%20ON%20REPLIT-00C853?style=for-the-badge&logo=replit&logoColor=white"/>
-  </a>
-</p>PANEL HOSTING
-
-<p align="center">
-  <a href="https://pterodactyl.io/">
-    <img src="https://img.shields.io/badge/PTERODACTYL%20PANEL-FF0000?style=for-the-badge&logo=docker&logoColor=white"/>
-  </a>
-  <a href="https://katabump.com/">
-    <img src="https://img.shields.io/badge/DEPLOY%20ON%20KATABUMP-00C853?style=for-the-badge&logo=server&logoColor=white"/>
-  </a>
-  <a href="https://bot-hosting.net/">
-    <img src="https://img.shields.io/badge/DEPLOY%20ON%20BOT--HOSTING-FF0000?style=for-the-badge&logo=server&logoColor=white"/>
-  </a>
-</p>VPS / SELF HOSTING
-
-<p align="center">
-  <a href="https://github.com/Teddyxmd/TEDDY-XMD">
-    <img src="https://img.shields.io/badge/DEPLOY%20ON%20VPS-00C853?style=for-the-badge&logo=linux&logoColor=white"/>
-  </a>
-  <a href="https://github.com/Teddyxmd/TEDDY-XMD">
-    <img src="https://img.shields.io/badge/VIEW%20SOURCE%20CODE-FF0000?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-</p>---
-
-🤖 ABOUT TEDDY-XMD ULTRA
-
-TEDDY-XMD ULTRA is a WhatsApp automation bot powered by JavaScript and Node.js.
-
-✨ FEATURES
-
-- WhatsApp Multi-Device support.
-- Pairing code connection.
-- Group management commands.
-- Antilink protection.
-- Antidelete functionality.
-- Welcome and goodbye messages.
-- Auto reactions.
-- Newsletter reactions.
-- Media downloading.
-- AI-powered commands.
-- Fun and entertainment commands.
-- Group administration tools.
-- Public and private modes.
-- MongoDB database support.
-- Session management.
-- Customizable bot settings.
-- Fast command processing.
-
----
-
-💻 TECHNOLOGIES
-
-<p align="center">
-  <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/WHATSAPP-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
-</p>TEDDY-XMD ULTRA uses WhatsApp Multi-Device technology powered by Baileys.
+<div align="center">🧸 TEDDY-XMD
 
----
+KING OF AUTOMATION
 
-📲 DEPLOYMENT METHODS
+"TEDDY-XMD" (https://img.shields.io/badge/TEDDY--XMD-BOT-00C853?style=for-the-badge&logo=github&logoColor=white)
+"Status" (https://img.shields.io/badge/STATUS-ONLINE-22C55E?style=for-the-badge)
+"Powered" (https://img.shields.io/badge/POWERED%20BY-TEDDY%20TECH-8B5CF6?style=for-the-badge)
 
-1. GET YOUR SESSION ID
+A WhatsApp automation bot powered by Teddy Tech.
 
-<p align="center">
-  <a href="https://teddyxmdpair-60b69f1c4cee.herokuapp.com/">
-    <img src="https://img.shields.io/badge/GENERATE%20PAIRING%20CODE-00C853?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-</p>1. Open the pairing website.
-2. Enter your WhatsApp number.
-3. Generate your pairing code.
-4. Open WhatsApp.
-5. Navigate to Linked Devices.
-6. Select Link a Device.
-7. Enter your pairing code.
+"🌐 General Website" (https://teddyxmd-bot-mac8.vercel.app/) · "🔑 Get Session" (https://teddyxmdpair-60b69f1c4cee.herokuapp.com/) · "🍴 Fork Repository" (https://github.com/Teddyxmd/TEDDY-XMD/fork)
 
-IMPORTANT: Keep your SESSION ID private.
+</div>---
 
-2. HEROKU DEPLOYMENT
+🌐 GENERAL WEBSITE
 
-1. Create a Heroku account.
-2. Click the Heroku deployment button.
-3. Connect your GitHub account.
-4. Select TEDDY-XMD.
-5. Configure the required environment variables.
-6. Deploy your application.
-7. Check your application logs.
+""Open General Website" (https://img.shields.io/badge/OPEN-GENERAL%20WEBSITE-06B6D4?style=for-the-badge&logo=vercel&logoColor=white)" (https://teddyxmd-bot-mac8.vercel.app/)
 
-3. PTERODACTYL PANEL DEPLOYMENT
+Visit the TEDDY-XMD general website for project information and useful links.
 
-1. Get a Pterodactyl hosting account.
-2. Create a Node.js server.
-3. Select a compatible Node.js runtime.
-4. Upload your bot files or clone the repository.
-5. Open the console.
-6. Install dependencies:
+🔑 GET YOUR WHATSAPP SESSION
 
-npm install
+""Pairing Server" (https://img.shields.io/badge/GET-WHATSAPP%20SESSION-EA580C?style=for-the-badge&logo=whatsapp&logoColor=white)" (https://teddyxmdpair-60b69f1c4cee.herokuapp.com/)
 
-7. Configure the required environment variables.
-8. Set the startup command:
+1. Open the pairing website.
+2. Follow the instructions to connect your WhatsApp account.
+3. Copy your session credentials into the correct bot configuration.
 
-node index.js
+«Security: Treat your session ID like a password. Never share it publicly or commit it to GitHub.»
 
-9. Start your server.
+🍴 FORK THE OFFICIAL REPOSITORY
 
-4. KATABUMP DEPLOYMENT
+""Fork Repository" (https://img.shields.io/badge/FORK-REPOSITORY-7C3AED?style=for-the-badge&logo=github&logoColor=white)" (https://github.com/Teddyxmd/TEDDY-XMD/fork)
 
-1. Visit https://katabump.com/
-2. Create an account.
-3. Create a Node.js server.
-4. Upload your TEDDY-XMD files or import the repository if supported.
-5. Configure the Node.js version.
-6. Install dependencies:
+""View Source" (https://img.shields.io/badge/VIEW-SOURCE%20CODE-2563EB?style=for-the-badge&logo=github&logoColor=white)" (https://github.com/Teddyxmd/TEDDY-XMD)
 
-npm install
+Fork the repository to create your own copy before deploying.
 
-7. Set the startup file to "index.js".
-8. Configure your session and database.
-9. Start your bot.
+🚀 DEPLOYMENT OPTIONS
 
-5. BOT-HOSTING DEPLOYMENT
+Choose your preferred hosting platform.
 
-1. Visit https://bot-hosting.net/
-2. Create an account.
-3. Create a Node.js server.
-4. Upload the bot files.
-5. Configure the Node.js runtime.
-6. Install dependencies:
+Platform| Deployment Link
+<img src="https://img.shields.io/badge/HEROKU-7952B3?style=flat-square&logo=heroku&logoColor=white" />| "Deploy on Heroku" (https://dashboard.heroku.com/new?template=https://github.com/Teddyxmd/TEDDY-XMD)
+<img src="https://img.shields.io/badge/RAILWAY-111827?style=flat-square&logo=railway&logoColor=white" />| "Open Railway" (https://railway.app/new)
+<img src="https://img.shields.io/badge/RENDER-46E3B7?style=flat-square&logo=render&logoColor=black" />| "Open Render" (https://render.com/)
+<img src="https://img.shields.io/badge/REPLIT-F26207?style=flat-square&logo=replit&logoColor=white" />| "Open Replit" (https://replit.com/)
+<img src="https://img.shields.io/badge/PTERODACTYL-0EA5E9?style=flat-square&logo=pterodactyl&logoColor=white" />| "Open Pterodactyl" (https://pterodactyl.io/)
+<img src="https://img.shields.io/badge/KATABUMP-F59E0B?style=flat-square" />| "Open KataBump" (https://katabump.com/)
+<img src="https://img.shields.io/badge/BOT--HOSTING-EC4899?style=flat-square" />| "Open Bot-Hosting" (https://bot-hosting.net/)
+<img src="https://img.shields.io/badge/VPS-14B8A6?style=flat-square&logo=linux&logoColor=white" />| Self-host using a Linux VPS
 
-npm install
+«Deployment note: The Heroku template shortcut requires a valid "app.json" in the repository. Other links open their hosting providers and may require manual setup.»
 
-7. Set the startup file to "index.js".
-8. Configure the required environment variables.
-9. Start your bot.
+📲 JOIN OUR WHATSAPP CHANNEL
 
-6. RAILWAY DEPLOYMENT
+""WhatsApp Channel" (https://img.shields.io/badge/JOIN-WHATSAPP%20CHANNEL-16A34A?style=for-the-badge&logo=whatsapp&logoColor=white)" (https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n)
 
-1. Visit https://railway.app/new
-2. Connect GitHub.
-3. Select the TEDDY-XMD repository.
-4. Configure environment variables.
-5. Deploy your application.
-6. Monitor the deployment logs.
+Follow our channel for updates, announcements and project news.
 
-7. REPLIT DEPLOYMENT
+👨‍💻 CONTACT THE DEVELOPER
 
-1. Visit https://replit.com/
-2. Import the GitHub repository.
-3. Configure the required secrets.
-4. Install dependencies.
-5. Configure the startup command.
-6. Run your bot.
+Developer: Teddy / Teddy Tech
 
-8. VPS DEPLOYMENT
+""WhatsApp Teddy" (https://img.shields.io/badge/CHAT-WITH%20TEDDY-DB2777?style=for-the-badge&logo=whatsapp&logoColor=white)" (https://wa.me/254799963583)
 
-Clone the repository:
+WhatsApp: +254799963583
 
-git clone https://github.com/Teddyxmd/TEDDY-XMD.git
+☕ BUY TEDDY A COFFEE / SUPPORT THE PROJECT
 
-Enter the project directory:
+Your support helps with TEDDY-XMD development, maintenance and future updates.
 
-cd TEDDY-XMD
+<div align="center">""SUPPORT TEDDY" (https://img.shields.io/badge/☕_SUPPORT-TEDDY-F97316?style=for-the-badge&logo=buymeacoffee&logoColor=white)" (https://support-teddytech.zone.id/)
 
-Install dependencies:
+""TEDDY TECH" (https://img.shields.io/badge/POWERED%20BY-TEDDY%20TECH-8B5CF6?style=for-the-badge)" (https://support-teddytech.zone.id/)
 
-npm install
+Every bit of support is appreciated! ❤️
 
-Start the bot:
+</div>---
 
-npm start
+<div align="center">"Made with Love" (https://img.shields.io/badge/MADE%20WITH-LOVE-EC4899?style=for-the-badge)
+"Automation" (https://img.shields.io/badge/KING%20OF-AUTOMATION-06B6D4?style=for-the-badge)
+"Teddy Tech" (https://img.shields.io/badge/POWERED%20BY-TEDDY%20TECH-6366F1?style=for-the-badge)
 
-For PM2:
+TEDDY-XMD 🧸
 
-npm install -g pm2
-pm2 start index.js --name TEDDY-XMD
-pm2 save
+KING OF AUTOMATION
 
----
+Powered by Teddy Tech.
 
-🗄️ MONGODB DATABASE
-
-Get your MongoDB connection URL from:
-
-https://www.mongodb.com/
-
-Configure the database according to the project's configuration settings.
-
-Keep your database credentials private.
-
----
-
-🎮 BOT GAMES
-
-1. Connect Four Game.
-2. Tic Tac Toe.
-3. Number Guessing Game.
-4. Word Chain Game.
-5. Hidden Card Game.
-6. Rolling Dice.
-7. Character Guessing Game.
-8. Capital City Finding.
-
----
-
-📊 PROJECT STATISTICS
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Teddyxmd&repo=TEDDY-XMD&show_owner=true&theme=dark"/>
-</p><p align="center">
-  <img src="https://profile-counter.glitch.me/Teddyxmd/count.svg" alt="Visitor Count"/>
-</p>---
-
-📞 DEVELOPER CONTACT
-
-<p align="center">
-  <a href="https://wa.me/254799963583">
-    <img src="https://img.shields.io/badge/WHATSAPP%20TEDDY%20TECH-00C853?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-</p><p align="center">
-  <a href="https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n">
-    <img src="https://img.shields.io/badge/JOIN%20OFFICIAL%20CHANNEL-FF0000?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-</p>- Developer: Teddy Tech
-- WhatsApp: +254799963583
-- GitHub: https://github.com/Teddyxmd
-- Repository: https://github.com/Teddyxmd/TEDDY-XMD
-
----
-
-⚠️ IMPORTANT NOTICE
-
-- TEDDY-XMD ULTRA is an independent WhatsApp automation project.
-- It is not affiliated with WhatsApp Inc.
-- Misusing automation features may result in WhatsApp account restrictions or bans.
-- Use the bot responsibly and at your own risk.
-- Never share your session credentials.
-- The developer is not responsible for account restrictions resulting from misuse.
-
----
-
-<p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-</p><p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Anton&size=30&pause=1000&color=FF0000&vCenter=true&width=465&lines=THANK+YOU+FOR+VISITING;TEDDY-TECH-IS-BACK;TEDDY-XMD-ULTRA;%F0%9F%A7%B8+KING+OF+AUTOMATION"/>
-</p><h2 align="center">🧸 TEDDY-XMD ULTRA 🧸</h2><p align="center">
-  <b>POWERED BY TEDDY TECH HUB</b><br/>
-  <b>© 2026 TEDDY TECH. ALL RIGHTS RESERVED.</b>
-</p><p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-  <img src="https://i.imgur.com/LyHic3i.gif"/>
-</p>
+</div>
