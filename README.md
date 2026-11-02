@@ -22,7 +22,7 @@
   <a href="https://github.com/Teddyxmd/TEDDY-XMD/fork">
     <img src="https://img.shields.io/badge/FORK%20REPOSITORY-FF0000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="https://www.teddyxmd.run.place/">
+  <a href="https://teddyxmdpair-60b69f1c4cee.herokuapp.com/">
     <img src="https://img.shields.io/badge/GET%20PAIRING%20CODE-00C853?style=for-the-badge&logo=whatsapp&logoColor=white"/>
   </a>
   <a href="https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n">
@@ -109,7 +109,7 @@ TEDDY-XMD ULTRA is a WhatsApp automation bot powered by JavaScript and Node.js.
 1. GET YOUR SESSION ID
 
 <p align="center">
-  <a href="https://www.teddyxmd.run.place/">
+  <a href="https://teddyxmdpair-60b69f1c4cee.herokuapp.com/">
     <img src="https://img.shields.io/badge/GENERATE%20PAIRING%20CODE-00C853?style=for-the-badge&logo=whatsapp&logoColor=white"/>
   </a>
 </p>1. Open the pairing website.
