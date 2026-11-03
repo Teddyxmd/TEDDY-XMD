@@ -1,0 +1,22 @@
+
+name: teddy-x-ultra
+
+services:
+  - name: teddy-x-ultra
+    type: WEB
+    instance_type: nano
+    regions:
+      - fra
+    ports:
+      - port: 8000
+        protocol: http
+    routes:
+      - path: /
+        port: 8000
+    docker:
+      dockerfile: Dockerfile
+    env:
+      - key: SESSION_ID
+        value: ""
+        secret: true
+        
