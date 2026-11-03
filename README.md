@@ -1,10 +1,17 @@
-# 🧸 TEDDY-XMD ULTRA
 
-## 👑 KING OF AUTOMATION
+<p align="center">
+  <img src="https://url.bmbxmd.workers.dev/1JNK9.jpg" alt="TEDDY-XMD ULTRA" width="300"/>
+</p>
 
-![TEDDY-XMD](https://img.shields.io/badge/TEDDY--XMD_ULTRA-BOT-00C853?style=for-the-badge&logo=github&logoColor=white)
-![Online](https://img.shields.io/badge/STATUS-ONLINE-22C55E?style=for-the-badge)
-![Teddy Tech](https://img.shields.io/badge/POWERED_BY-TEDDY_TECH-8B5CF6?style=for-the-badge)
+<h1 align="center">🧸 TEDDY-XMD ULTRA</h1>
+<h3 align="center">👑 KING OF AUTOMATION</h3>
+<p align="center"><b>Powered by Teddy Tech.</b></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/TEDDY--XMD_ULTRA-BOT-00C853?style=for-the-badge&logo=github&logoColor=white" alt="TEDDY-XMD"/>
+  <img src="https://img.shields.io/badge/STATUS-ONLINE-22C55E?style=for-the-badge" alt="Online"/>
+  <img src="https://img.shields.io/badge/POWERED_BY-TEDDY_TECH-8B5CF6?style=for-the-badge" alt="Teddy Tech"/>
+</p>
 
 **A powerful WhatsApp Multi-Device automation bot powered by Teddy Tech and Baileys.**
 
