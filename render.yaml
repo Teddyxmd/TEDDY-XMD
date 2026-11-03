@@ -1,0 +1,15 @@
+
+services:
+  - type: web
+    name: teddy-x-ultra
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+
+    envVars:
+      - key: SESSION_ID
+        value: ""
+        sync: false
+        
