@@ -1,7 +1,7 @@
 {
   "name": "Teddy X Ultra",
-  "description": "Teddy X Ultra - WhatsApp MD Multi-Device Bot powered by Baileys",
-  "repository": "",
+  "description": "Teddy X Ultra - WhatsApp MD Multi-Device Bot powered by Teddy tech",
+  "repository": "https://github.com/Teddyxmd/TEDDY-XMD",
   "logo": "",
   "keywords": [
     "whatsapp",
@@ -25,9 +25,64 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "TEDDY-XMD~<handle>  use session like this.",
+      "description": "Your TEDDY-XMD session ID. Keep this secret.",
       "required": true,
       "value": ""
+    },
+    "BOT_MODE": {
+      "description": "Bot mode: public, private, group, or pm.",
+      "required": false,
+      "value": "public"
+    },
+    "ANTIDELETE_MODE": {
+      "description": "Anti-delete mode: off, chat, or private.",
+      "required": false,
+      "value": "off"
+    },
+    "STATUS_MODE": {
+      "description": "Presence: off, typing, recording, or recordtype.",
+      "required": false,
+      "value": "off"
+    },
+    "ANTILINK_ACTION": {
+      "description": "Default for new groups: delete, kick, or off. Existing groups keep their saved settings.",
+      "required": false,
+      "value": "off"
+    },
+    "PREFIX": {
+      "description": "Default command prefix.",
+      "required": false,
+      "value": "."
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner phone number with country code, digits only.",
+      "required": false,
+      "value": ""
+    },
+    "TIMEZONE": {
+      "description": "Timezone, e.g. Africa/Nairobi.",
+      "required": false,
+      "value": "Africa/Nairobi"
+    },
+    "AUTOSTATUSVIEW": {
+      "description": "Automatically view WhatsApp statuses: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "AUTOREACTSTATUS": {
+      "description": "Automatically react to WhatsApp statuses: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "AUTOREACTSTATUS_EMOJI": {
+      "description": "Emoji used for automatic status reactions. Use one or more emojis, e.g. 💙 or 💙 ✅ 🔥.",
+      "required": false,
+      "value": "💙"
+    },
+    "AUTOREACTSTATUS_RANDOM": {
+      "description": "Choose a random emoji from AUTOREACTSTATUS_EMOJI when multiple emojis are configured.",
+      "required": false,
+      "value": "false"
     }
   }
 }
