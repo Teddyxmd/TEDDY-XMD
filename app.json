@@ -30,7 +30,7 @@
       "value": ""
     },
     "BOT_MODE": {
-      "description": "Bot mode: public, private, group, or pm.",
+      "description": "Bot mode: public, private, group, pm, or self (self = only your own messages).",
       "required": false,
       "value": "public"
     },
@@ -75,12 +75,82 @@
       "value": "false"
     },
     "AUTOREACTSTATUS_EMOJI": {
-      "description": "Emoji used for automatic status reactions. Use one or more emojis, e.g. 💙 or 💙 ✅ 🔥.",
+      "description": "Emoji pool for status reactions.",
       "required": false,
-      "value": "💙"
+      "value": "\ud83d\udc99"
     },
     "AUTOREACTSTATUS_RANDOM": {
-      "description": "Choose a random emoji from AUTOREACTSTATUS_EMOJI when multiple emojis are configured.",
+      "description": "Randomize status reaction emoji: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "BOT_NAME": {
+      "description": "Bot display name.",
+      "required": false,
+      "value": "TEDDY-XMD-ULTRA"
+    },
+    "AUTOREAD": {
+      "description": "Automatically mark messages as read: true or false.",
+      "required": false,
+      "value": "true"
+    },
+    "AUTOREACT": {
+      "description": "Automatically react to messages: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "ANTIEDIT_MODE": {
+      "description": "Anti-edit mode: off, chat, or private.",
+      "required": false,
+      "value": "off"
+    },
+    "ANTIDELETE_STATUS": {
+      "description": "Enable anti-delete for WhatsApp status updates: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Keep bot presence online: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "FONT_STYLE": {
+      "description": "Default font style (supported style name).",
+      "required": false,
+      "value": "normal"
+    },
+    "READ_RECEIPTS": {
+      "description": "Read receipts: off, all, or read.",
+      "required": false,
+      "value": "off"
+    },
+    "AUTOREAD_MODE": {
+      "description": "Auto-read scope: off, all, private, or group.",
+      "required": false,
+      "value": "off"
+    },
+    "AUTO_BIO": {
+      "description": "Automatically update bio: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_STICKER": {
+      "description": "Automatically convert media to stickers: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_TYPING": {
+      "description": "Default typing presence: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_RECORDING": {
+      "description": "Default recording presence: true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_RECORDTYPE": {
+      "description": "Default recording+typing presence: true or false.",
       "required": false,
       "value": "false"
     }
