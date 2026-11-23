@@ -1,8 +1,8 @@
-
 {
   "name": "Teddy X Ultra",
-  "description": "Teddy X Ultra - WhatsApp MD Multi-Device Bot powered by Teddy tech",
-  "repository": "https://github.com/Teddyxmd/TEDDY-XMD",
+  "description": "Teddy X Ultra - WhatsApp MD Multi-Device Bot powered by Baileys",
+  "repository": "",
+  "logo": "",
   "keywords": [
     "whatsapp",
     "baileys",
@@ -25,134 +25,9 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Your TEDDY-XMD session ID. Keep this secret.",
+      "description": "TEDDY-XMD~<handle>  use session like this.",
       "required": true,
       "value": ""
-    },
-    "BOT_MODE": {
-      "description": "Bot mode: public, private, group, pm, or self.",
-      "required": false,
-      "value": "public"
-    },
-    "ANTIDELETE_MODE": {
-      "description": "Anti-delete mode: off, chat, or private.",
-      "required": false,
-      "value": "off"
-    },
-    "STATUS_MODE": {
-      "description": "Presence: off, typing, recording, or recordtype.",
-      "required": false,
-      "value": "off"
-    },
-    "ANTILINK_ACTION": {
-      "description": "Default for new groups: delete, kick, or off.",
-      "required": false,
-      "value": "off"
-    },
-    "PREFIX": {
-      "description": "Default command prefix.",
-      "required": false,
-      "value": "."
-    },
-    "OWNER_NUMBER": {
-      "description": "Owner phone number with country code, digits only.",
-      "required": false,
-      "value": ""
-    },
-    "TIMEZONE": {
-      "description": "Timezone, e.g. Africa/Nairobi.",
-      "required": false,
-      "value": "Africa/Nairobi"
-    },
-    "AUTOSTATUSVIEW": {
-      "description": "Automatically view WhatsApp statuses: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTOREACTSTATUS": {
-      "description": "Automatically react to WhatsApp statuses: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTOREACTSTATUS_EMOJI": {
-      "description": "Emoji pool for status reactions.",
-      "required": false,
-      "value": "💙"
-    },
-    "AUTOREACTSTATUS_RANDOM": {
-      "description": "Randomize status reaction emoji: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "BOT_NAME": {
-      "description": "Bot display name.",
-      "required": false,
-      "value": "TEDDY-XMD-ULTRA"
-    },
-    "AUTOREAD": {
-      "description": "Automatically mark messages as read: true or false.",
-      "required": false,
-      "value": "true"
-    },
-    "AUTOREACT": {
-      "description": "Automatically react to messages: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "ANTIEDIT_MODE": {
-      "description": "Anti-edit mode: off, chat, or private.",
-      "required": false,
-      "value": "off"
-    },
-    "ANTIDELETE_STATUS": {
-      "description": "Enable anti-delete for WhatsApp status updates: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "ALWAYS_ONLINE": {
-      "description": "Keep bot presence online: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "FONT_STYLE": {
-      "description": "Default font style.",
-      "required": false,
-      "value": "normal"
-    },
-    "READ_RECEIPTS": {
-      "description": "Read receipts: off, all, or read.",
-      "required": false,
-      "value": "off"
-    },
-    "AUTOREAD_MODE": {
-      "description": "Auto-read scope: off, all, private, or group.",
-      "required": false,
-      "value": "off"
-    },
-    "AUTO_BIO": {
-      "description": "Automatically update bio: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_STICKER": {
-      "description": "Automatically convert media to stickers: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_TYPING": {
-      "description": "Default typing presence: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_RECORDING": {
-      "description": "Default recording presence: true or false.",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_RECORDTYPE": {
-      "description": "Default recording+typing presence: true or false.",
-      "required": false,
-      "value": "false"
     }
   }
 }
